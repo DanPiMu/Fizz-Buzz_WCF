@@ -51,6 +51,7 @@ Para utilizar el proyecto, sigue estos pasos:
 
 1. Configura el servicio web WCF en tu servidor de alojamiento preferido, como IIS.
 2. Realiza una solicitud al servicio web utilizando la ruta y los parámetros adecuados para generar la serie de Fizz Buzz.
+3. Ejemplo de URL "http://localhost:59142/VuelingWebService.svc/FizzBuzz/1"
 
 
 ## Problemas conocidos
