@@ -102,8 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\AutofacConfiguration.cs" />
-    <Compile Include="Errors\GlobalErrorBehaviorAttribute.cs" />
-    <Compile Include="Errors\GlobalErrorHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
