@@ -8,9 +8,11 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using VuelingExam.Application.Service.Contracts;
+using VuelingExam.Distributed.WebService.Errors;
 
 namespace VuelingExam.Distributed.WebService
 {
+    [GlobalErrorBehaviorAttribute(typeof(GlobalErrorHandler))]
     public class VuelingWebService : IVuelingWebService
     {
         private readonly ILog _log;
