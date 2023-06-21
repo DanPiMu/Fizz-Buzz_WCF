@@ -12,8 +12,8 @@ namespace VuelingExam.Distributed.WebService
     public interface IVuelingWebService
     {
         [OperationContract]
-        [WebInvoke(Method = "POST",
-            UriTemplate = "/FizzBuzz",
+        [WebInvoke(Method = "GET",
+            UriTemplate = "/FizzBuzz/{start}",
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Bare)]
