@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF91E0DF-25F0-4140-8D0B-C0FAC9E70856}</ProjectGuid>
+    <ProjectGuid>{A9E3A25F-EFFF-47A7-A3B9-4100AAEBA389}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VuelingExam.Infrastucture.Repository</RootNamespace>
-    <AssemblyName>VuelingExam.Infrastucture.Repository</AssemblyName>
+    <RootNamespace>VuelingExam.Infrastucture.Utils</RootNamespace>
+    <AssemblyName>VuelingExam.Infrastucture.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IFizzBuzzRepository.cs" />
-    <Compile Include="Implementations\FizzBuzzRepository.cs" />
+    <Compile Include="Contracts\IWriteList.cs" />
+    <Compile Include="Implementations\WriteList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VuelingExam.Infrastucture.Repository
+namespace VuelingExam.Infrastucture.Repository.Contracts
 {
-    public class Class1
+    public interface IFizzBuzzRepository
     {
     }
 }
