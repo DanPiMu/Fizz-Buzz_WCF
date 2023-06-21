@@ -60,4 +60,6 @@ Para utilizar el proyecto, sigue estos pasos:
 
 - No se ha realizado la prueba unitaria de la clase "WriteList". La dependencia depende directamente de la clase con el sistema de archivos a través de la clase "File" dificulta la prueba unitaria. Esto puede resultar en una cobertura de prueba insuficiente y en una menor confiabilidad de las pruebas realizadas.
 
-
+## Author
+[Daniel Alejandro Pilligua Murillo]
+(https://www.github.com/DanPiMu)
