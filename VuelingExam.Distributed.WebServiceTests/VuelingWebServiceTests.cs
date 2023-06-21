@@ -21,8 +21,8 @@ namespace VuelingExam.Distributed.WebService.Tests
 
             using (var moq = AutoMock.GetLoose())
             {
-                // Arrange
-                var expected = new List<string>() { "1", "2", "Fizz" }; // Aquí va la salida esperada.
+                
+                var expected = new List<string>() { "1", "2", "Fizz" }; 
                 var mockFizzBuzzAppService = moq.Mock<IFizzBuzzAppService>();
                 var mockLog = moq.Mock<ILog>();
 
@@ -32,10 +32,10 @@ namespace VuelingExam.Distributed.WebService.Tests
 
                 var service = new VuelingWebService(mockFizzBuzzAppService.Object, mockLog.Object);
 
-                // Act
+               
                 var actual = service.FizzBuzz("1");
 
-                // Assert
+                
                 Assert.AreEqual(expected, actual);
                 mockFizzBuzzAppService.Verify(s => s.FizzBuzzGenerate(It.IsAny<int>(), It.IsAny<int>()), Times.Once());
             }

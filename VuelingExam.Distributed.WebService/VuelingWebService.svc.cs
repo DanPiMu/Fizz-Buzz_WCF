@@ -27,7 +27,6 @@ namespace VuelingExam.Distributed.WebService
         {
             int startInt = Int32.Parse(start);
             int limit=100;
-            
 
             List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
             
