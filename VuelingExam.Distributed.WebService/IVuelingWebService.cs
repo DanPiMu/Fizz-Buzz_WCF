@@ -18,6 +18,14 @@ namespace VuelingExam.Distributed.WebService
             ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Bare)]
         List<string> FizzBuzz(string start);
+        
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+            UriTemplate = "/FizzBuzz",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Bare)]
+        List<string> FizzBuzzP(string start);
     }
 
 
