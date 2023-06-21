@@ -52,7 +52,7 @@ namespace VuelingExam.Distributed.WebService
                 return limit;
             }
 
-            // Valor predeterminado en caso de que la clave no esté presente o no sea un entero válido
+            
             return 100;
         }
     }
