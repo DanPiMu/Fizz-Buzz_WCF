@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VuelingExam.Infrastucture.Repository
+namespace VuelingExam.Infrastucture.Utils.Contracts
 {
-    public class Class1
+    public interface IWriteList
     {
+        void WriteListToFile(List<string> list);
     }
 }
