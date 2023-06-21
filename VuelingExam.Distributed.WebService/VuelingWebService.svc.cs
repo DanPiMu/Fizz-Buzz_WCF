@@ -18,7 +18,7 @@ namespace VuelingExam.Distributed.WebService
 
         public VuelingWebService() { }
 
-        public VuelingWebService(ILog log, IFizzBuzzAppService fizzBuzzAppService)
+        public VuelingWebService( IFizzBuzzAppService fizzBuzzAppService, ILog log)
         {
             _log = log;
             _fizzBuzzAppService = fizzBuzzAppService;
@@ -26,16 +26,8 @@ namespace VuelingExam.Distributed.WebService
         public List<string> FizzBuzz(string start)
         {
             int startInt = Int32.Parse(start);
-            int limit;
-            try
-            {
-                limit = int.Parse(ConfigurationManager.AppSettings["FizzBuzzLimit"]);
-            }
-            catch
-            {
-                // Lanzar una excepción con un mensaje más amigable
-                throw new ConfigurationErrorsException("'FizzBuzzLimit' is not present in the configuration file or it is not an integer.");
-            }
+            int limit=100;
+            
 
             List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
             

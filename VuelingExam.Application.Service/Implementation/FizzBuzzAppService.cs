@@ -19,6 +19,7 @@ namespace VuelingExam.Application.Service.Implementation
 
         public List<string> FizzBuzzGenerate(int start, int limit)
         {
+
             List<string> result = new List<string>();
             for (int i = start; i <= limit; i++)
             {
