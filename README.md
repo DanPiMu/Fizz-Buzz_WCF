@@ -4,8 +4,6 @@ Este proyecto implementa un servicio web WCF que expone un método para generar 
 
 ## Requisitos previos
 
-Antes de ejecutar el proyecto, asegúrate de tener los siguientes requisitos previos:
-
 - [Visual Studio](https://visualstudio.microsoft.com/) o un entorno de desarrollo compatible.
 - [.NET Framework 4.8](https://dotnet.microsoft.com/download) instalado en tu máquina.
 - Conocimientos básicos de WCF, Autofac y Log4Net.
