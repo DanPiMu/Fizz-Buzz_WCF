@@ -26,7 +26,7 @@ namespace VuelingExam.Distributed.WebService
         public List<string> FizzBuzz(string start)
         {
             int startInt = Int32.Parse(start);
-            int limit=100;
+            int limit = GetFizzBuzzLimit();
             _log.Info("We have the initial number");
 
             List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
@@ -37,11 +37,23 @@ namespace VuelingExam.Distributed.WebService
         public List<string> FizzBuzzP(string start)
         {
             int startInt = Int32.Parse(start);
-            int limit = 100;
+            int limit = GetFizzBuzzLimit();
 
             List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
 
             return result;
+        }
+        private int GetFizzBuzzLimit()
+        {
+            string fizzBuzzLimit = ConfigurationManager.AppSettings["FizzBuzzLimit"];
+
+            if (int.TryParse(fizzBuzzLimit, out int limit))
+            {
+                return limit;
+            }
+
+            // Valor predeterminado en caso de que la clave no esté presente o no sea un entero válido
+            return 100;
         }
     }
 }
