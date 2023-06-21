@@ -27,12 +27,21 @@ namespace VuelingExam.Distributed.WebService
         {
             int startInt = Int32.Parse(start);
             int limit=100;
+            _log.Info("We have the initial number");
 
             List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
             
             return result;
         }
 
+        public List<string> FizzBuzzP(string start)
+        {
+            int startInt = Int32.Parse(start);
+            int limit = 100;
 
+            List<string> result = _fizzBuzzAppService.FizzBuzzGenerate(startInt, limit);
+
+            return result;
+        }
     }
 }
