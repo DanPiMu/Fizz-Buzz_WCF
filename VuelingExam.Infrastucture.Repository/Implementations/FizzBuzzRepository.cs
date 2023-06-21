@@ -18,6 +18,7 @@ namespace VuelingExam.Infrastucture.Repository.Implementations
 
         public void AddToList(List<string> result) 
         {
+
             _writeList.WriteListToFile(result);
         }
     }
