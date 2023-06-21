@@ -10,6 +10,7 @@ namespace VuelingExam.Infrastucture.Utils.Implementations
 {
     public class WriteList : IWriteList
     {
+        public WriteList() { }
         public void WriteListToFile(List<string> list)
         {
             string currentDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
