@@ -45,6 +45,11 @@
     <Compile Include="Implementations\FizzBuzzRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\VuelingExam.Infrastucture.Utils\VuelingExam.Infrastucture.Utils.csproj">
+      <Project>{a9e3a25f-efff-47a7-a3b9-4100aaeba389}</Project>
+      <Name>VuelingExam.Infrastucture.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,8 +10,10 @@ namespace VuelingExam.Infrastucture.Utils.Implementations
 {
     public class WriteList : IWriteList
     {
-        public void WriteListToFile(List<string> list, string filePath)
+        public void WriteListToFile(List<string> list)
         {
+            string currentDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string filePath = Path.Combine(currentDirectory, "FizzBuzzList.txt");
             string content = string.Join(", ", list);
 
             content = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ": " + content;
