@@ -8,6 +8,6 @@ namespace VuelingExam.Infrastucture.Utils.Contracts
 {
     public interface IWriteList
     {
-        void WriteListToFile(List<string> list, string filePath);
+        void WriteListToFile(List<string> list);
     }
 }
